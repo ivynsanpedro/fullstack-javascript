@@ -18,7 +18,6 @@ import serverRender from './serverRender';
 server.get('/', (req, res) => {
   serverRender()
     .then(content => {
-      console.log(content);
       res.render('index', {
         content
       });
